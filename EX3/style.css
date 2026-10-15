@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    background-color: #ffffff;
+    color: #333333;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.site-header {
+    padding: 20px;
+    background-color: #eeeeee;
+    text-align: center;
+}
+
+.brand {
+    color: #333333;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.brand span,
+h1 span {
+    color: #4b725d;
+}
+
+.site-nav {
+    margin-top: 12px;
+}
+
+.site-nav a {
+    margin: 0 10px;
+    color: #333333;
+    text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+    color: #4b725d;
+    text-decoration: underline;
+}
+
+.hero,
+.page-hero {
+    padding: 40px 20px;
+    background-color: #f4f4ef;
+    text-align: center;
+}
+
+.hero-copy,
+.page-hero-copy {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.eyebrow {
+    color: #4b725d;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 38px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+.intro {
+    max-width: 550px;
+    margin: 20px auto;
+}
+
+.hero-image,
+.page-hero img {
+    width: 100%;
+    max-width: 650px;
+    height: 300px;
+    margin-top: 20px;
+    object-fit: cover;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: #4b725d;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #34513f;
+}
+
+.section-wrap {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.welcome {
+    text-align: center;
+}
+
+.story,
+.contact-details,
+.contact-content {
+    background-color: #f4f4ef;
+}
+
+.services {
+    display: flex;
+    gap: 20px;
+}
+
+.service-card {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #dddddd;
+}
+
+.service-number {
+    color: #4b725d;
+    font-weight: bold;
+}
+
+.service-card h2 {
+    font-size: 21px;
+}
+
+.services-note {
+    padding: 0 20px 30px;
+    text-align: center;
+}
+
+.text-link,
+.contact-info a {
+    color: #34513f;
+}
+
+.fine-print {
+    font-size: 13px;
+}
+
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.contact-info,
+.contact-form {
+    flex: 1 1 280px;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    font: inherit;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    margin-top: 15px;
+    border: 0;
+    font: inherit;
+    cursor: pointer;
+}
+
+.form-note {
+    font-size: 13px;
+}
+
+.site-footer {
+    padding: 20px;
+    background-color: #eeeeee;
+    text-align: center;
+}
+
+.site-footer p,
+.site-footer small {
+    margin: 5px;
+}
+
+@media (max-width: 600px) {
+    .site-nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .services {
+        display: block;
+    }
+
+    .service-card {
+        margin-bottom: 15px;
+    }
+}

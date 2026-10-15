@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Morrow Market with a question about our products or your order.">
+    <title>Contact | Morrow Market</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Morrow Market home">morrow<span>.</span></a>
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Our Services</a>
+            <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero contact-hero">
+            <div class="page-hero-copy">
+                <p class="eyebrow">GET IN TOUCH</p>
+                <h1>Contact <span>us</span></h1>
+                <p class="intro">Have a question about a product or an order? Send us a message and we’ll be happy to help.</p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="A team working together and ready to help customers">
+        </section>
+
+        <section class="contact-content section-wrap">
+            <div class="contact-info">
+                <h2>We’re here to help</h2>
+                <p>Email us at <a href="mailto:yimkeakmeng@gmail.com">yimkeakmeng@gmail.com</a></p>
+                <p>Customer care: Monday–Friday, 9am–5pm</p>
+                <p class="fine-print">Replace the sample email address with your real business email before publishing.</p>
+            </div>
+
+            <form class="contact-form" id="contact-form">
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name" autocomplete="name" required>
+
+                <label for="email">Your email</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button class="button" type="submit">Send message</button>
+                <p class="form-note">Sending opens a new message in your email app.</p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="brand" href="index.html">morrow<span>.</span></a>
+        <p>Good things for the everyday.</p>
+        <small>© 2026 Morrow Market</small>
+    </footer>
+
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const form = event.currentTarget;
+            const name = form.elements.name.value.trim();
+            const email = form.elements.email.value.trim();
+            const message = form.elements.message.value.trim();
+            const subject = encodeURIComponent("Message from " + name);
+            const body = encodeURIComponent(message + "\n\nFrom: " + name + " (" + email + ")");
+
+            window.location.href = "mailto:hello@morrowmarket.example?subject=" + subject + "&body=" + body;
+        });
+    </script>
+</body>
+</html>
